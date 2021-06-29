@@ -1,0 +1,22 @@
+.main{
+    width: 100%;
+}
+.seccion1{
+    height: 55vh;
+    background-image: url('/../assets/img/imagen1.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include vista-desktop{
+        height: 150vh;
+        background-position: center;
+        float: right;
+    }
+
+    @include vista-tablet{
+        background-position: center;
+        height: 70vh;
+
+    }
+}

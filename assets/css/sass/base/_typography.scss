@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+$font-1 : 'Old Standard TT', serif;
+$font-2 : 'Raleway', sans-serif;
+
+$font-weight1: 400;
+$font-weight2: 700;
+
+$xxx-large : 50px;
+$xx-large : 30px;
+$x-large: 20px;
+$large : 18px;
+$medium : 16px;
+$small : 14px;
+$x-small : 12px;
+
+
+.logo-h1{
+    font-family: $font-1;
+    font-size: $xx-large ;
+    font-weight: $font-weight2;
+    color: $color1;
+    position: relative;
+    top: 30px;
+
+    @include logo-rotate{
+        font-size: $x-large ;
+    }
+     
+}
+
+/*.nav-link{
+    font-weight: $font-weight2;
+    color: $color4;
+}*/
+
+.seccion2-h1{
+    font-family: $font-1;
+    font-size: $xxx-large ;
+    font-weight: $font-weight2;
+    color: $color4;
+}
+.seccion2-parrafo{
+    font-family: $font-2;
+    font-size: $x-large ;
+    font-weight: $font-weight1;
+    color: $color4;
+}
+.newsletter-h4{
+    font-family: $font-1;
+    font-size: $xx-large ;
+    font-weight: $font-weight2;
+    color: $color1;
+}
+.form-label{
+    font-family: $font-1;
+    font-size: $medium ; 
+    font-weight: $font-weight1;  
+    color: $color1;  
+}
+.newsletter-h5{
+    font-family: $font-1;
+    font-size: $large ; 
+    font-weight: $font-weight2;
+    transform: rotate(+90deg); 
+}

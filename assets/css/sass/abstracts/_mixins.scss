@@ -1,0 +1,26 @@
+@mixin fonts ($font-1, $xxx-large, $font-wight2, $color4){
+
+    font-family: $font-1;
+    font-size: $xxx-large ;
+    font-weight: $font-weight2;
+    color: $color4;
+}
+
+@mixin vista-desktop {
+    @media (min-width: #{$screen-desktop}){
+
+      @content; 
+     }
+}
+
+@mixin vista-tablet{
+    @media (min-width: #{$screen-tablet}){
+        @content;
+    }
+}
+
+@mixin logo-rotate{
+    @media (min-width: #{$screen-tablet}){
+        @content;
+    }
+}

@@ -1,0 +1,21 @@
+.seccion2-btn{
+    border-radius: 0;
+    border: $color4 solid 2px;
+    color: $color4;
+    font-weight: $font-weight2;
+
+  &:focus{
+    border-radius: 0;
+    border: $color6 solid 2px;
+    color: $color6;  
+    font-weight: $font-weight2;
+  }
+}
+
+.btn-hover{
+    border-radius: 0;
+    border: $color6 solid 2px;
+    color: $color6;
+    font-weight: $font-weight2;
+}
+
