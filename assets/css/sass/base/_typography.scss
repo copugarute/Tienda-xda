@@ -29,10 +29,10 @@ $x-small : 12px;
      
 }
 
-/*.nav-link{
+.nav-link{
     font-weight: $font-weight2;
     color: $color4;
-}*/
+}
 
 .seccion2-h1{
     font-family: $font-1;
@@ -63,4 +63,16 @@ $x-small : 12px;
     font-size: $large ; 
     font-weight: $font-weight2;
     transform: rotate(+90deg); 
+}
+
+@include vista-desktop{
+    .seccion2-h1{
+        font-size: $xx-large ;
+    }
+    .seccion2-parrafo{
+        font-size: $medium;
+    }
+    .nav-link{
+        padding-bottom: 40px;
+    }
 }

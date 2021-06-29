@@ -1,5 +1,7 @@
 .main{
     width: 100%;
+    display: block;
+
 }
 .seccion1{
     height: 55vh;
@@ -7,16 +9,21 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     
-    @include vista-desktop{
-        height: 150vh;
-        background-position: center;
-        float: right;
-    }
 
     @include vista-tablet{
         background-position: center;
         height: 70vh;
 
+    }
+    @include vista-desktop{
+        background-position: center;
+        height: 100vh;
+        width: 60%;
+        position: absolute;
+        left: 40%;
+        
+        
     }
 }

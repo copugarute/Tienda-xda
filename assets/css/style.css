@@ -10731,6 +10731,7 @@ textarea.form-control-lg {
   }
 }
 body {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
@@ -10753,10 +10754,11 @@ img {
   }
 }
 
-/*.nav-link{
-    font-weight: $font-weight2;
-    color: $color4;
-}*/
+.nav-link {
+  font-weight: 700;
+  color: #0C0910;
+}
+
 .seccion2-h1 {
   font-family: "Old Standard TT", serif;
   font-size: 50px;
@@ -10792,6 +10794,19 @@ img {
   transform: rotate(90deg);
 }
 
+@media (min-width: 992px) {
+  .seccion2-h1 {
+    font-size: 30px;
+  }
+
+  .seccion2-parrafo {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    padding-bottom: 40px;
+  }
+}
 nav {
   height: 85px;
   width: 100%;
@@ -10822,6 +10837,7 @@ nav {
 
 .main {
   width: 100%;
+  display: block;
 }
 
 .seccion1 {
@@ -10830,13 +10846,7 @@ nav {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (min-width: 992px) {
-  .seccion1 {
-    height: 100vh;
-    background-position: center;
-    float: right;
-  }
+  width: 100%;
 }
 @media (min-width: 768px) {
   .seccion1 {
@@ -10844,15 +10854,33 @@ nav {
     height: 70vh;
   }
 }
+@media (min-width: 992px) {
+  .seccion1 {
+    background-position: center;
+    height: 100vh;
+    width: 60%;
+    position: absolute;
+    left: 40%;
+  }
+}
 
+.seccion2 {
+  width: 100%;
+}
 .seccion2 .seccion2-shop {
   height: 65%;
-  width: auto;
+  width: 100%;
   padding-top: 20px;
 }
 .seccion2 .newsletter {
   height: 35%;
   width: 100%;
+}
+@media (min-width: 992px) {
+  .seccion2 {
+    height: 110vh;
+    width: 40%;
+  }
 }
 
 .newsletter-input {
@@ -10870,14 +10898,22 @@ nav {
 
 .seccion2-btn {
   border-radius: 0;
-  border: #0C0910 solid 0.5px;
+  border: #0C0910 solid 2px;
   color: #0C0910;
   font-weight: 700;
 }
-.seccion2-btn:hover {
-  border: #646266;
-  background-color: #FFF;
-  color: #0C0910;
+.seccion2-btn:focus {
+  border-radius: 0;
+  border: #A6A5AB solid 2px;
+  color: #A6A5AB;
+  font-weight: 700;
+}
+
+.btn-hover {
+  border-radius: 0;
+  border: #A6A5AB solid 2px;
+  color: #A6A5AB;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
