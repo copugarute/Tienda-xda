@@ -10842,7 +10842,7 @@ nav {
 
 .seccion1 {
   height: 55vh;
-  background-image: url("/../assets/img/imagen1.png");
+  background-image: url("../img/imagen1.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
